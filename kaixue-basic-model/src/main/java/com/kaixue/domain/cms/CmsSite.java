@@ -25,7 +25,7 @@ public class CmsSite
     //站点url域
     @ApiModelProperty("站点url域")
     private String siteDomain;
-    //站点端口
+    //站点端口,int类型值在mongodb中不能为空或者非数字串
     @ApiModelProperty("站点端口")
     private int sitePort;
     //站点web路径
@@ -34,4 +34,7 @@ public class CmsSite
     //创建时间
     @ApiModelProperty("创建时间")
     private Date siteCreateDate;
+    //站点物理路径
+    @ApiModelProperty("站点物理路径")
+    private String sitePhysicalPath;
 }

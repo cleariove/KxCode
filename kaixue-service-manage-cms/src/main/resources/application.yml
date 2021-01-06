@@ -10,5 +10,11 @@ spring:
     cache: false #关闭模板缓存
     settings:
       template_update_delay: 0  #更新检测延时为0
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
 server:
   port: 31001

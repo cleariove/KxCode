@@ -34,4 +34,8 @@ public interface CmsPageControllerApi
     @ApiOperation(value = "删除页面")
     @ApiImplicitParam(name = "id",value = "页面id",required = true,paramType = "path", dataType = "string")
     ResponseResult delete(String id);
+
+    @ApiOperation(value = "页面发布")
+    @ApiImplicitParam(name = "pageId", value = "页面id", required = true, paramType = "path", dataType = "string")
+    ResponseResult post(String pageId);
 }

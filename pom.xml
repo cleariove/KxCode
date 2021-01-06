@@ -20,6 +20,7 @@
         <module>kaixue-service-api</module>
         <module>kaixue-basic-common</module>
         <module>kaixue-service-manage-cms</module>
+        <module>kaixue-service-cms-client</module>
     </modules>
 
     <properties>
