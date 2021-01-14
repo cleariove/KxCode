@@ -14,7 +14,9 @@ import org.springframework.web.client.RestTemplate;
 //因为先引入了mysql连接包但是没有配置，所以注入会报错，这个注解可以模拟一个连接对象
 @EnableAutoConfiguration(exclude = {DataSourceAutoConfiguration.class})
 @SpringBootApplication
+//@EntityScan作用 https://blog.csdn.net/andy_zhang2007/article/details/84099595#EntityScan_20
 @EntityScan("com.kaixue.basic.domain.cms")//扫描实体类
+//@ComponentScan扫描的bean需要带有注解
 @ComponentScan(basePackages = {"com.kaixue.api"})//扫描api项目下所有包
 @ComponentScan(basePackages = {"com.kaixue.manage_cms"})//扫描本项目下所有包
 @ComponentScan(basePackages = {"com.kaixue.model"})//扫描common项目所有包

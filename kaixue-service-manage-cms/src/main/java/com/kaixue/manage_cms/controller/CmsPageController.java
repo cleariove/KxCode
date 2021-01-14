@@ -31,15 +31,6 @@ public class CmsPageController implements CmsPageControllerApi
                                         QueryPageRequest queryPageRequest)
     {
         return cmsPageService.findList(page,size,queryPageRequest);
-//        List<CmsPage> list = new ArrayList<>();
-//        CmsPage cmsPage = new CmsPage();
-//        cmsPage.setPageName("测试");
-//        list.add(cmsPage);
-//        QueryResult<CmsPage> queryResult = new QueryResult<>();
-//        queryResult.setTotal(1);
-//        queryResult.setData(list);
-//        QueryResponseResult<CmsPage> result = new QueryResponseResult<>(CommonCode.SUCCESS,queryResult);
-//        return result;
     }
 
     @Override

@@ -46,7 +46,7 @@ public class ExceptionCatch
     @ResponseBody
     public ResponseResult customExceptionHandler(CustomException customException)
     {
-        LOGGER.error("捕获异常:{}\r\nexception:",customException.getMessage(),customException);
+        LOGGER.error("捕获异常:{}\r\nexception:",customException.resultCode.message(),customException);
         return new ResponseResult(customException.getResultCode());
     }
 

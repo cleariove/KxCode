@@ -328,6 +328,7 @@ public class CmsPageService
      * @param pageId
      * @return
      */
+    // todo 页面发布后发现有问题需要回退如何处理，怎么确保每台服务器都发布成功，详情见第六天pdf思考部分（mq的确认机制）
     public ResponseResult postPage(String pageId)
     {
         //执行页面静态化，获取静态页面内容

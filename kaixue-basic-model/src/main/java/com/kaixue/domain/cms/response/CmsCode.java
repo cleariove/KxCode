@@ -1,6 +1,7 @@
 package com.kaixue.domain.cms.response;
 
 import com.kaixue.model.response.ResultCode;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.ToString;
 
 //以下注解用于自动生成get，set，equals等方法，属于lombok插件
@@ -18,10 +19,11 @@ public enum  CmsCode implements ResultCode
     CMS_SITE_NOT_EXISTS(false, 24008,"站点不存在"),
     CMS_MONGO_FILE_IS_NULL(false,24009,"获取不到文件");
 
+    @ApiModelProperty(value = "操作是否成功", example = "true", required = true)
     boolean success;
-
+    @ApiModelProperty(value = "操作代码", example = "22001", required = true)
     int code;
-
+    @ApiModelProperty(value = "操作提示", example = "操作过于频繁！", required = true)
     String message;
 
     CmsCode(boolean success, int code, String message)

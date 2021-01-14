@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--使用logback记录日志
+    appender标签是日志输出方式
+    root表明了输出规则
+    具体参照这篇博客https://blog.csdn.net/Char_CN/article/details/7839318-->
+<configuration>
+<!--    日志输出位置-->
+    <property name="LOG_HOME" value="d:/logs"/>
+<!--    Console输出设置-->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+<!--            格式化输出：%d代表日期，%thread代表线程名，%-5level级别从左显示5个字符宽度，%msg日志消息，%n换行-->
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+            <charset>utf8</charset>
+        </encoder>
+    </appender>
+
+<!--    文件输出设置-->
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+<!--        按日生成文件-->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+<!--            日志文件的文件名格式,这里就表示按日生成文件-->
+            <fileNamePattern>${LOG_HOME}/kaixue.%d{yyyy-MM-dd}.log</fileNamePattern>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+<!--    采用异步输出-->
+    <appender name="ASYNC" class="ch.qos.logback.classic.AsyncAppender">
+<!--        不丢失日志.默认的,如果队列的80%已满,则会丢弃TRACT、DEBUG、INFO级别的日志-->
+        <discardingThreshold>0</discardingThreshold>
+<!--        更改队列默认深度，默认256，这个值会影响性能-->
+        <queueSize>512</queueSize>
+<!--        添加附加的appender，最多只能添加一个-->
+        <appender-ref ref="FILE"/>
+    </appender>
+
+<!--    根logger元素，所有logger收集的信息默认都会在发送至这个节点，
+        只有大于等于info级别的信息会被处理
+        appender表示这些信息既会输出在控制台又会输出到文件-->
+    <root level="info">
+        <!--        <appender-ref ref="ASYNC"/>-->
+        <appender-ref ref="FILE"/>
+        <appender-ref ref="CONSOLE"/>
+    </root>
+
+<!--    name代表这个logger生效的包或者类，additivity设为false表示不向root传递日志信息-->
+    <logger name="org.apache.ibatis.cache.decorators.LoggingCache" level="DEBUG" additivity="false">
+        <appender-ref ref="CONSOLE"/>
+    </logger>
+
+<!--    这个节点没有设置-->
+    <logger name="org.springframework.boot" level="DEBUG"/>
+
+
+</configuration>

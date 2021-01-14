@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.kaixue.manage_course.dao.CourseBaseMapper">
+
+    <select id="findCourseList" parameterType="com.kaixue.domain.course.request.QueryCourseRequest" resultType="com.kaixue.domain.course.ext.CourseInfo">
+        select * from course_base left join course_pic on course_base.id = course_pic.course_id
+    </select>
+
+</mapper>
