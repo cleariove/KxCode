@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/KxCode.iml" filepath="$PROJECT_DIR$/.idea/KxCode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kaixue-basic/kaixue-basic.iml" filepath="$PROJECT_DIR$/kaixue-basic/kaixue-basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kaixue-basic/kaixue-basic-common/kaixue-basic-common.iml" filepath="$PROJECT_DIR$/kaixue-basic/kaixue-basic-common/kaixue-basic-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kaixue-basic/kaixue-basic-model/kaixue-basic-model.iml" filepath="$PROJECT_DIR$/kaixue-basic/kaixue-basic-model/kaixue-basic-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kaixue-basic/kaixue-basic-utils/kaixue-basic-utils.iml" filepath="$PROJECT_DIR$/kaixue-basic/kaixue-basic-utils/kaixue-basic-utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kaixue-basic/kaixue-service-api/kaixue-service-api.iml" filepath="$PROJECT_DIR$/kaixue-basic/kaixue-service-api/kaixue-service-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kaixue-basic/kaixue-service-base-filesystem/kaixue-service-base-filesystem.iml" filepath="$PROJECT_DIR$/kaixue-basic/kaixue-service-base-filesystem/kaixue-service-base-filesystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kaixue-basic/kaixue-service-cms-client/kaixue-service-cms-client.iml" filepath="$PROJECT_DIR$/kaixue-basic/kaixue-service-cms-client/kaixue-service-cms-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kaixue-basic/kaixue-service-manage-cms/kaixue-service-manage-cms.iml" filepath="$PROJECT_DIR$/kaixue-basic/kaixue-service-manage-cms/kaixue-service-manage-cms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kaixue-basic/kaixue-service-manage-course/kaixue-service-manage-course.iml" filepath="$PROJECT_DIR$/kaixue-basic/kaixue-service-manage-course/kaixue-service-manage-course.iml" />
+    </modules>
+  </component>
+</project>

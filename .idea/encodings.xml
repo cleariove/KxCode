@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/kaixue-basic/kaixue-basic-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kaixue-basic/kaixue-basic-model/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kaixue-basic/kaixue-basic-utils/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kaixue-basic/kaixue-service-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kaixue-basic/kaixue-service-base-filesystem/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kaixue-basic/kaixue-service-cms-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kaixue-basic/kaixue-service-manage-cms/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kaixue-basic/kaixue-service-manage-course/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kaixue-basic/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kaixue-basic/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

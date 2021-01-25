@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="kaixue-basic-utils" />
+        <module name="kaixue-basic-model" />
+        <module name="kaixue-service-manage-cms" />
+        <module name="kaixue-basic-common" />
+        <module name="kaixue-service-cms-client" />
+        <module name="kaixue-service-manage-course" />
+        <module name="kaixue-service-api" />
+        <module name="kaixue-service-base-filesystem" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="kaixue-basic" target="1.8" />
+      <module name="kaixue-basic-common" target="1.8" />
+      <module name="kaixue-basic-model" target="1.8" />
+      <module name="kaixue-basic-utils" target="1.8" />
+      <module name="kaixue-service-api" target="1.8" />
+      <module name="kaixue-service-base-filesystem" target="1.8" />
+      <module name="kaixue-service-cms-client" target="1.8" />
+      <module name="kaixue-service-manage-cms" target="1.8" />
+      <module name="kaixue-service-manage-course" target="1.8" />
+      <module name="kaixue-service-system-dictionary" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="kaixue-basic-common" options="-parameters" />
+      <module name="kaixue-basic-model" options="-parameters" />
+      <module name="kaixue-basic-utils" options="-parameters" />
+      <module name="kaixue-service-api" options="-parameters" />
+      <module name="kaixue-service-base-filesystem" options="-parameters" />
+      <module name="kaixue-service-cms-client" options="-parameters" />
+      <module name="kaixue-service-manage-cms" options="-parameters" />
+      <module name="kaixue-service-manage-course" options="-parameters" />
+      <module name="kaixue-service-system-dictionary" options="-parameters" />
+    </option>
+  </component>
+</project>
